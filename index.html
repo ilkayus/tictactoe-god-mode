@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="shortcut icon" type="image/png" href="/icon.png" /> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <script defer src="tictactoe.js"></script> -->
+    <script defer src="script.js"></script>
+    <title>Hebele Hebe Heb</title>
+  </head>
+  <body>
+    <div class="sum">
+      <div>
+        <h1>T I C T A C T O E</h1>
+        <table class="score-table">
+          <tr class="score-table-row">
+            <td class="score-table-cell"><h2>AI</h2></td>
+            <td class="score-table-cell"><h2>HUMAN</h2></td>
+            <td class="score-table-cell"><h2>TIE</h2></td>
+          </tr>
+          <tr class="score-table-row">
+            <td class="score-table-cell"><h2 class="score-ai">0</h2></td>
+            <td class="score-table-cell"><h2 class="score-human">0</h2></td>
+            <td class="score-table-cell"><h2 class="score-tie">0</h2></td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <label class="switch">
+          <input class="mode" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div>
+        <button type="button" class="start button" data-token='X'">X</button>
+        <button type="button" class="start button" data-token='O'">O</button>
+      </div>
+    </div>
+    <div class="container hidden visually-hidden">
+      <table class="table">
+        <tr class="table-row">
+          <td class="table-el b-right b-bottom border">
+            <div class="cell cell--0"></div>
+          </td>
+          <td class="table-el b-right b-bottom border">
+            <div class="cell cell--1"></div>
+          </td>
+          <td class="table-el b-bottom border">
+            <div class="cell cell--2"></div>
+          </td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-el b-right b-bottom border">
+            <div class="cell cell--3"></div>
+          </td>
+          <td class="table-el b-right b-bottom border">
+            <div class="cell cell--4"></div>
+          </td>
+          <td class="table-el b-bottom border">
+            <div class="cell cell--5"></div>
+          </td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-el b-right border">
+            <div class="cell cell--6"></div>
+          </td>
+          <td class="table-el b-right border">
+            <div class="cell cell--7"></div>
+          </td>
+          <td class="table-el"><div class="cell cell--8"></div></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 50%;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: url("img/black-chalk.jpg");
+  /* background-image: linear-gradient(to top left, #5f5d5f 0%, #0c3a0359 100%); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h1 {
+  line-height: 1em;
+  margin-bottom: 5px;
+  margin-top: 40px;
+  font-size: 2.8em;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.5s;
+}
+h1:hover {
+  color: aliceblue;
+}
+h2 {
+  transition: 0.5s;
+}
+h2:hover {
+  color: aliceblue;
+}
+.container {
+  transition: 2s;
+}
+.button {
+  margin-top: 60px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: rgba(240, 248, 255, 0.205);
+  font-size: 6em;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+}
+.button:hover {
+  color: aliceblue;
+}
+.hidden {
+  display: none;
+}
+.visually-hidden {
+  opacity: 0;
+}
+.sum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score-table {
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.score-table-cell {
+  width: 33%;
+}
+.score-table-row {
+  height: 20px;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-justify: center;
+  font-size: 90px;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.cell:hover {
+  background-color: rgba(61, 183, 240, 0.1);
+}
+
+.b-right {
+  border-right: 4px solid gainsboro;
+}
+.b-bottom {
+  border-bottom: 4px solid gainsboro;
+}
+
+/* .table-el {
+}
+.table-row {
+} */
+.winner-cell {
+  color: crimson;
+}
+.border {
+  transition: 0.4s;
+}
+.tie-border {
+  border-color: rgb(167, 63, 63);
+}
+.table {
+  border-collapse: collapse;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 30px;
+  opacity: 1;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(61, 61, 61);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "KOLSUZ";
+  font-size: 2em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.788);
+  height: 20px;
+  width: 80px;
+  left: 5px;
+  bottom: 5px;
+  background-color: rgba(219, 219, 219, 0.384);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #aaa9a980;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #adadad86;
+}
+
+input:checked + .slider:before {
+  content: "ALLAH";
+  transform: translateX(60px);
+}
