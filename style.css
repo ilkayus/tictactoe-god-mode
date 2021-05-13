@@ -27,7 +27,7 @@ h1 {
   line-height: 1em;
   margin-bottom: 5px;
   margin-top: 40px;
-  font-size: 2.8em;
+  font-size: clamp(22px, 6vw, 30px);
   text-align: center;
   font-weight: bold;
   transition: 0.5s;
@@ -37,6 +37,7 @@ h1:hover {
 }
 h2 {
   transition: 0.5s;
+  font-size: 18px;
 }
 h2:hover {
   color: aliceblue;
@@ -45,16 +46,16 @@ h2:hover {
   transition: 2s;
 }
 .button {
-  margin-top: 60px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-top: 2vw;
+  /*margin-left: 25px;
+  margin-right: 25px; */
   color: rgba(240, 248, 255, 0.205);
   font-size: 6em;
   background-color: Transparent;
   border: none;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: clamp(62px, 8vw, 90px);
+  height: clamp(62px, 8vw, 90px);
   transition: 1s;
 }
 .button:hover {
@@ -152,7 +153,7 @@ h2:hover {
 
 .slider:before {
   position: absolute;
-  content: "KOLSUZ";
+  content: "VIRGIN";
   font-size: 2em;
   text-align: center;
   color: rgba(255, 255, 255, 0.788);
@@ -173,6 +174,6 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  content: "ALLAH";
+  content: "CHAD";
   transform: translateX(60px);
 }

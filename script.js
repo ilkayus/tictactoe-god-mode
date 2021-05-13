@@ -12,8 +12,13 @@ const startButtons = document.querySelectorAll(".button");
 startButtons.forEach((e) =>
   e.addEventListener("click", function (e) {
     startButtons.forEach((e) => e.classList.add("visually-hidden"));
+    document.querySelector(".slider").classList.add("visually-hidden");
     setTimeout(function () {
       startButtons.forEach((e) => e.classList.add("hidden"));
+      document.querySelector(".slider").classList.add("hidden");
+      document.querySelector(".table-ai-text").textContent = allahMode.checked
+        ? "CHAD"
+        : "VIRGIN";
       const app = new App(e.target.dataset.token, allahMode.checked);
     }, 400);
   })
