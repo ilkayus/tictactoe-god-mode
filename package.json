@@ -2,17 +2,27 @@
   "homepage": "https://ilkayus.github.io/tictactoe-god-mode",
   "name": "tictactoe-god-mode",
   "version": "1.0.0",
-  "description": "",
+  "description": "ez gg",
   "default": "index.html",
   "scripts": {
-    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build index.html --dist-dir ./dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "i.d",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "main": "script.js",
+  "dependencies": {
     "parcel": "^2.0.0-beta.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilkayus/tictactoe-god-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ilkayus/tictactoe-god-mode/issues"
   }
 }

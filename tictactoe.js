@@ -63,23 +63,13 @@ class App {
       this._tieBorderAnimation(true);
       this.scoreTie++;
       document.querySelector(".score-tie").textContent = this.scoreTie;
-      // console.log(
-      //   `Tie! - Score : Human ${this.scoreHuman} , Ai ${this.scoreAi} , Tie ${this.scoreTie}`
-      // );
     } else {
       this.turn ? this.scoreHuman++ : this.scoreAi++;
       this._winnerAnimation(true);
       document.querySelector(".score-human").textContent = this.scoreHuman;
       document.querySelector(".score-ai").textContent = this.scoreAi;
-      // console.log(
-      //   `'Winner is ${this.turn ? this.side : this.side === "X" ? "O" : "X"}'`
-      // );
-      // console.log(
-      //   `Score : Human ${this.scoreHuman} , Ai ${this.scoreAi} , Tie ${this.scoreTie}`
-      // );
     }
     setTimeout(() => this._reset(), 2000);
-    // this._reset();
   }
   _checkWinner() {
     const winner =
@@ -118,11 +108,6 @@ class App {
     const aiSide = this.side === "X" ? "O" : "X";
     const cellIndex = this.mode ? this._allahAi(aiSide) : this._kolsuzAi();
     console.log(cellIndex);
-    // const randIndex = Math.trunc(Math.random() * 9);
-    // const nullCells = this.table
-    //   .map((val, idx) => (val === null ? idx : null))
-    //   .filter((val) => val !== null);
-    // const cellIndex = nullCells[randIndex % nullCells.length];
     this.table[cellIndex] = aiSide;
     const selectedCell = document.querySelector(`.cell--${cellIndex}`);
     selectedCell.textContent = aiSide;
@@ -208,13 +193,3 @@ class App {
     );
   }
 }
-
-// [[1,2],[3,6],[4,8]],
-// [[0,2],[4,7]],
-// [[5,8],[0,1],[4,6]],
-// [[0,6],[4,5]],
-// [[0,8],[1,7],[2,6],[3,5]],
-// [[3,4],[2,8]],
-// [[0,3],[2,4],[7,8]],
-// [[1,4],[6,8]],
-// [[6,7],[0,4],[2,5]]
